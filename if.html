@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>submit</title>
+  <style >
+           body{
+               background-image:url(dd.jpg);
+               background-repeat:no-repeat;
+               background-attachment: fixed;
+               background-size: 100% 100%;
+           }
+
+         </style>
+
+</head>
+<body>
+      <h3 align="center">
+      <div class="container">
+
+        <font face="Lato" size="10"><label>ENTER YOUR DETAILS</label></font><br><br>
+       <form onsubmit="sendEmail()">
+      <font face="Lato" size="5"><label >YOUR NAME</label></font>  
+      <input type="text" id="name" required> <br><br>
+
+     <font face="Lato" size="5"><label >CHIT NAME</label></font>
+     <input type="text" id="name"  required> <br><br>
+
+      <font face="Lato" size="5"><label >CHIT AMOUNT</label></font>
+     <input type="number" id="number"  required> <br><br>
+
+       <font face="Lato" size="5"><label >VALID MOBILE NO</label></font>
+     <input type="number" id="number"  required> <br><br>
+     </form>
+
+    <a href="///C:/Users/91989/Music/thankyou.htmlt>"> <button >submit</button></a>
+      </h3>
+      </div>
+      <!DOCTYPE html>
+<html>
+<head>
+  <title>Email Button</title>
+  <script type="text/javascript">
+    function sendEmail() {
+      // Replace the placeholders below with your own email details
+      var recipientEmail = 'recipient@example.com';
+      var subject = 'Hello!';
+      var body = 'This is the content of the email.';
+
+      // Construct the mailto URL
+      var mailtoUrl = 'mailto:' + recipientEmail + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+      // Open the mail client
+      window.location.href = mailtoUrl;
+    }
+  </script>
+</head>
+<body>
+  <button onclick="sendEmail()">Send Email</button>
+</body>
+</html>
+</body>
+</html>
